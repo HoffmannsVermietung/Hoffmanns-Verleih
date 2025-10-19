@@ -24,8 +24,8 @@
     .menu > li > a{display:inline-flex;gap:8px;padding:10px 12px;border-radius:10px;font-weight:600}
     .menu > li:hover > a{background:#f1f5f9}
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25)}
-    .hero{position:relative;background:#0f172a;height:42vh;display:flex;align-items:center}
-    .hero .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .hero{position:relative;background:#0f172a;height:auto;display:flex;align-items:center;padding:40px 0}
+    .hero .container{display:flex;flex-direction:column;gap:20px}
     .hero h1{font-size:clamp(28px,4vw,46px);color:#fff}
     .hero p{color:#e2e8f0;max-width:720px}
     .badge{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:#fee2e2;color:#991b1b;margin-bottom:6px;font-weight:800}
@@ -39,6 +39,7 @@
     .muted{color:var(--muted)}
     footer{margin-top:34px;border-top:1px solid var(--line);color:var(--muted)}
     .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
+    ul{margin-left:18px}
   </style>
 </head>
 <body>
@@ -65,7 +66,13 @@
       <div>
         <span class="badge">Milwaukee • M18BLDDRC-0X</span>
         <h1>Milwaukee Akku/Bohrschrauber mieten</h1>
-        <p>Leistungsstarker, bürstenloser M18 Akku/Bohrschrauber (Modell <strong>M18BLDDRC-0X</strong>) inkl. 2× 3Ah Akkus, Schnellladegerät und Koffer. Ideal für Montage, Ausbau und Renovierungen.</p>
+        <p>Bürstenloser M18 Akku/Bohrschrauber (Modell <strong>M18BLDDRC-0X</strong>) inkl. 2× 3Ah Akkus, Schnellladegerät und Koffer. Ideal für Montage, Ausbau und Renovierungen.</p>
+        <ul style="color:#f1f5f9;margin-top:10px;">
+          <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
+          <li>1× Ladegerät</li>
+          <li>1× robuster Transportkoffer</li>
+          <li>2× 3.0Ah Akku (M18)</li>
+        </ul>
         <div class="inline" style="margin-top:12px">
           <a class="cta" href="anfrage.html?tool=Milwaukee%20Akku%2FBohrschrauber%20M18BLDDRC-0X">Jetzt anfragen</a>
         </div>
@@ -82,39 +89,40 @@
           <div class="price">
             <div class="muted">Tag</div>
             <div class="amount">15 € netto</div>
-            <div class="muted">Abholung in Furtwangen</div>
+            <div class="muted">zzgl. MwSt., Abholung in Furtwangen</div>
           </div>
           <div class="price">
             <div class="muted">Wochenende (Fr–So)</div>
             <div class="amount">35 € netto</div>
-            <div class="muted">Fair & transparent</div>
+            <div class="muted">zzgl. MwSt., fair & transparent</div>
           </div>
           <div class="price">
             <div class="muted">Woche (7 Tage)</div>
             <div class="amount">60 € netto</div>
-            <div class="muted">Kaution: 50 €</div>
+            <div class="muted">zzgl. MwSt., Kaution: 50 €</div>
           </div>
         </div>
+        <p class="muted" style="margin-top:10px">Rechnung mit ausgewiesener MwSt. möglich · Gewerbliche Vermietung</p>
       </div>
       <div class="card">
         <h2>Beschreibung</h2>
-        <ul style="margin-left:18px">
-          <li>Bürstenloser Motor für mehr Leistung & längere Laufzeit</li>
+        <ul>
+          <li>Bürstenloser Motor: hohe Leistung & längere Laufzeit</li>
           <li>2× 3.0Ah M18 Akkus + Schnellladegerät</li>
-          <li>Robuster Koffer für sicheren Transport</li>
-          <li>Kompakt & robust – perfekt für Baustellen</li>
-          <li>Gewerbliche Vermietung – Rechnung mit ausgewiesener MwSt. möglich</li>
+          <li>Robuster Koffer, kompakt & baustellentauglich</li>
+          <li>Metall-Schnellspannbohrfutter, präzise Drehmomentstufen</li>
+          <li>Perfekt für Holz-, Metall- und Trockenbauarbeiten</li>
         </ul>
       </div>
     </section>
 
     <section class="card">
       <h2>Lieferumfang</h2>
-      <ul style="margin-left:18px">
-        <li>Milwaukee M18BLDDRC-0X Akku/Bohrschrauber</li>
+      <ul>
+        <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
+        <li>1× Ladegerät</li>
+        <li>1× robuster Transportkoffer</li>
         <li>2× 3.0Ah Akku (M18)</li>
-        <li>Schnellladegerät</li>
-        <li>Koffer</li>
       </ul>
     </section>
 
@@ -135,8 +143,8 @@
   <footer>
     <div class="container">
       <p class="muted" style="margin-top:8px;line-height:1.5">
-        Patrick Hoffmann · Hauptstraße 18 · 78120 Furtwangen<br>
-        E-Mail: <a href="mailto:Patrick.Vermietung@gmx.de">Patrick.Vermietung@gmx.de</a>
+        Patrick Hoffmann · Hauptstraße 18 · 78120 Furtwangen ·
+        <a href="mailto:Patrick.Vermietung@gmx.de">Patrick.Vermietung@gmx.de</a>
       </p>
       <p class="muted">© <span id="y"></span> Hoffmann´s Vermietung</p>
     </div>
