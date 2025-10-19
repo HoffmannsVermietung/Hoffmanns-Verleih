@@ -33,18 +33,23 @@
     .menu > li:hover > a{background:#f1f5f9}
 
     .dropdown{position:absolute;left:0;top:100%;min-width:320px;display:none;padding:12px}
-    .dropdown .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,.08);padding:10px}
+    .dropdown .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,.08);padding:10px;transition:background .2s ease}
     .dropdown ul{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0;padding:8px}
     .dropdown li{list-style:none}
-    .dropdown a{display:block;padding:10px 12px;border-radius:10px;color:var(--muted);font-weight:600}
+    .dropdown a{display:block;padding:10px 12px;border-radius:10px;color:var(--muted);font-weight:600;transition:.2s}
     .dropdown a:hover{background:#f8fafc;color:var(--ink)}
+
+    /* Milwaukee-Rot für Werkzeug-Dropdown */
+    .menu > li:first-child:hover .panel{background:var(--pri);} /* Werkzeuge Panel */
+    .menu > li:first-child:hover .dropdown a{color:#fff;}
+    .menu > li:first-child:hover .dropdown a:hover{background:#be123c;color:#fff;}
+
     .menu > li:hover .dropdown{display:block}
 
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25);transition:.2s}
     .cta:hover{transform:translateY(-1px);background:var(--pri-600)}
 
-    /* Hero mit Hintergrundbild */
-    .hero{position:relative;background:url('https://raw.githubusercontent.com/HoffmannsVermietung/Hoffmanns-Verleih/main/ChatGPT%20Image%2019.%20Okt.%202025%2C%2014_15_06.png') center/cover no-repeat;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+    .hero{position:relative;background:url(https://raw.githubusercontent.com/HoffmannsVermietung/Hoffmanns-Verleih/main/ChatGPT%20Image%2019.%20Okt.%202025%2C%2014_15_06.png) center/cover no-repeat;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
     .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.45);}
     .hero-content{position:relative;z-index:1;padding:0 20px;max-width:900px}
     .hero h1{font-size:clamp(36px,5vw,60px);margin-bottom:10px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
