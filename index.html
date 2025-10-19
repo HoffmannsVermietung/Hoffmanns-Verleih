@@ -8,22 +8,20 @@
   <meta name="theme-color" content="#ffffff" />
   <style>
     :root{
-      --bg:#f5f7fb;         /* heller Seitenhintergrund */
-      --card:#ffffff;        /* Kartenhintergrund */
-      --ink:#0f172a;         /* Hauptschrift */
-      --muted:#475569;       /* Sekundärschrift */
-      --line:#e5e7eb;        /* Linienfarbe */
-      --pri:#e11d48;         /* Primär (Rot/Pink) */
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:#e5e7eb;
+      --pri:#e11d48;
       --pri-600:#be123c;
-      --accent:#0ea5e9;      /* Akzent Blau */
+      --accent:#0ea5e9;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0}
+    *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
     a{color:inherit;text-decoration:none}
     .container{max-width:1200px;margin:0 auto;padding:20px}
 
-    /* Topbar / Navigation */
     header{position:sticky;top:0;z-index:40;background:#ffffffcc;backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.2px}
@@ -34,7 +32,6 @@
     .menu > li > a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;font-weight:600;color:#0f172a}
     .menu > li:hover > a{background:#f1f5f9}
 
-    /* Dropdown */
     .dropdown{position:absolute;left:0;top:100%;min-width:320px;display:none;padding:12px}
     .dropdown .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,.08);padding:10px}
     .dropdown ul{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0;padding:8px}
@@ -46,27 +43,23 @@
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25);transition:.2s}
     .cta:hover{transform:translateY(-1px);background:var(--pri-600)}
 
-    /* Hero */
-    .hero{background:linear-gradient(140deg,#0f172a,#334155 55%,#64748b);border-bottom:1px solid rgba(255,255,255,.15)}
-    .hero-wrap{display:grid;gap:20px;padding:56px 0;color:#fff}
-    @media(min-width:960px){.hero-wrap{grid-template-columns:1.1fr .9fr}}
-    .hero h1{font-size:clamp(34px,5vw,56px);line-height:1.08;margin:0 0 10px;color:#fff}
-    .hero p{margin:0;color:#e2e8f0}
-    .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;display:grid;place-items:center;min-height:260px}
+    /* Hero mit Hintergrundbild */
+    .hero{position:relative;background:url('ChatGPT Image 19. Okt. 2025, 14_15_06.png') center/cover no-repeat;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+    .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.45);}
+    .hero-content{position:relative;z-index:1;padding:0 20px;max-width:900px}
+    .hero h1{font-size:clamp(36px,5vw,60px);margin-bottom:10px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+    .hero p{font-size:18px;color:#f1f5f9;text-shadow:0 2px 5px rgba(0,0,0,.5)}
 
-    /* Sections */
     h2{font-size:clamp(22px,3vw,30px);margin:0 0 12px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:18px}
     .grid{display:grid;gap:16px}
     @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
 
     footer{margin-top:34px;border-top:1px solid var(--line);color:var(--muted)}
     .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
-
   </style>
 </head>
 <body>
-  <!-- NAVIGATION -->
   <header>
     <div class="container nav">
       <div class="brand">
@@ -79,10 +72,10 @@
           <div class="dropdown">
             <div class="panel">
               <ul>
-                <li><a href="#werkzeuge">Akkuschrauber</a></li>
-                <li><a href="#werkzeuge">Bohrhammer</a></li>
-                <li><a href="#werkzeuge">Winkelschleifer</a></li>
-                <li><a href="#werkzeuge">Stichsäge</a></li>
+                <li><a href="#werkzeuge">Milwaukee Akkuschrauber</a></li>
+                <li><a href="#werkzeuge">Milwaukee Bohrhammer</a></li>
+                <li><a href="#werkzeuge">Milwaukee Winkelschleifer</a></li>
+                <li><a href="#werkzeuge">Milwaukee Stichsäge</a></li>
               </ul>
             </div>
           </div>
@@ -92,116 +85,74 @@
           <div class="dropdown">
             <div class="panel">
               <ul>
-                <li><a href="#reinigung">Nass-/Trockensauger</a></li>
-                <li><a href="#reinigung">Hochdruckreiniger</a></li>
-                <li><a href="#reinigung">Teppichreiniger</a></li>
-                <li><a href="#reinigung">Kehrmaschine</a></li>
+                <li><a href="#reinigung">Kärcher Puzzi (Teppichreiniger)</a></li>
+                <li><a href="#reinigung">Kärcher Hochdruckreiniger</a></li>
               </ul>
             </div>
           </div>
         </li>
         <li>
           <a href="#">Boxautomaten</a>
-          <div class="dropdown">
-            <div class="panel">
-              <ul>
-                <li><a href="#boxautomat">Klassik (Arcade)</a></li>
-                <li><a href="#boxautomat">LED-Party</a></li>
-                <li><a href="#boxautomat">Outdoor</a></li>
-                <li><a href="#boxautomat">mit Ticketdruck</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
         <li>
           <a href="#">Hüpfburgen</a>
-          <div class="dropdown">
-            <div class="panel">
-              <ul>
-                <li><a href="#huepf">Mini (bis 10 Kinder)</a></li>
-                <li><a href="#huepf">Mittel (bis 20 Kinder)</a></li>
-                <li><a href="#huepf">Riesenburg</a></li>
-                <li><a href="#huepf">mit Rutsche</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
         <li>
           <a href="#">Beamer</a>
-          <div class="dropdown">
-            <div class="panel">
-              <ul>
-                <li><a href="#beamer">Full HD</a></li>
-                <li><a href="#beamer">4K</a></li>
-                <li><a href="#beamer">Leinwand + Stativ</a></li>
-                <li><a href="#beamer">Event-Set</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
         <li><a class="cta" href="#kontakt">Jetzt anfragen</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-wrap">
-      <div>
-        <h1>Hoffmann´s Vermietung</h1>
-        <p>Wir vermieten jegliche Art von Sachen – von <strong>Werkzeugen</strong> und <strong>Reinigungsmaschinen</strong> über <strong>Boxautomaten</strong> & <strong>Hüpfburgen</strong> bis hin zu <strong>Beamern</strong> für Events. Regional, fair & zuverlässig.</p>
-        <div style="margin-top:14px" class="inline">
-          <a class="cta" href="#kontakt">Jetzt anfragen</a>
-          <a class="cta" style="background:#0ea5e9" href="#standort">Standort ansehen</a>
-        </div>
-      </div>
-      <div class="hero-card">Hero‑Bild / Slider (Platzhalter)</div>
+    <div class="hero-content">
+      <h1>Hoffmann´s Vermietung</h1>
+      <p>Wir vermieten jegliche Art von Sachen – von Werkzeugen und Reinigungsmaschinen über Boxautomaten & Hüpfburgen bis hin zu Beamern. Regional, fair & zuverlässig.</p>
     </div>
   </section>
 
-  <!-- ANGEBOT TEASER (ohne Preise) -->
-  <main class="container" style="margin-top:18px">
+  <main class="container">
     <section id="angebot" class="grid grid-2">
       <div class="card">
         <h2>Unser Sortiment</h2>
-        <p class="muted">Eine Auswahl unserer beliebtesten Mietartikel:</p>
         <ul>
           <li>Milwaukee M18 Akkuschrauber‑Set (2× 3Ah, Ladegerät, Koffer)</li>
-          <li>Hochdruckreiniger & Nass-/Trockensauger</li>
-          <li>Boxautomat (Arcade) – ideal für Feste & Firmenfeiern</li>
-          <li>Hüpfburg in verschiedenen Größen (mit/ohne Rutsche)</li>
-          <li>Beamer inkl. Leinwand & Ton auf Wunsch</li>
+          <li>Kärcher Puzzi (Teppichreiniger)</li>
+          <li>Kärcher Hochdruckreiniger</li>
+          <li>Boxautomat – Coming soon</li>
+          <li>Hüpfburgen – Coming soon</li>
+          <li>Beamer – Coming soon</li>
         </ul>
-        <p style="margin-top:8px" class="muted">Spezialwünsche? Frag gern an – wir finden eine Lösung.</p>
       </div>
       <div id="standort" class="card">
         <h2>Standort</h2>
         <p class="muted">Furtwangen im Schwarzwald – Abholung & Lieferung nach Absprache.</p>
         <div style="height:260px;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;background:#f8fafc;color:#334155">Google‑Maps‑Platzhalter</div>
-        <p class="muted" style="margin-top:8px">Auf Wunsch binden wir hier deine Google‑Maps Karte ein.</p>
       </div>
     </section>
 
-    <section id="kontakt" class="card" style="margin-top:18px">
+    <section id="kontakt" class="card">
       <h2>Kontakt & Anfrage</h2>
       <p>Schreib uns kurz, was du brauchst und für welchen Zeitraum. Wir melden uns schnell zurück.</p>
       <div class="inline" style="margin-top:10px">
-        <a class="cta" href="mailto:info@example.com?subject=Anfrage%20Hoffmanns%20Vermietung&body=Hallo%2C%20ich%20m%C3%B6chte%20folgendes%20mieten%3A%20...%20Zeitraum%3A%20...%20Telefon%3A%20...">E‑Mail senden</a>
+        <a class="cta" href="mailto:info@example.com">E‑Mail senden</a>
         <a class="cta" style="background:#0ea5e9" href="tel:+490000000000">Anrufen</a>
       </div>
-      <p class="muted" style="margin-top:8px">Ersetze oben E‑Mail & Telefonnummer mit deinen echten Daten. Optional: WhatsApp‑Link einfügen.</p>
+      <p class="muted" style="margin-top:8px">Ersetze oben E‑Mail & Telefonnummer mit deinen echten Daten.</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
       <div class="inline"><a href="#impressum">Impressum</a><span>•</span><a href="#datenschutz">Datenschutz</a></div>
-      <p class="muted">© <span id="y"></span> Hoffmann´s Vermietung – Alle Rechte vorbehalten.</p>
+      <p class="muted">© <span id="y"></span> Hoffmann´s Vermietung – Patrick Hoffmann – Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
