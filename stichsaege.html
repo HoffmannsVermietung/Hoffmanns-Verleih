@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Milwaukee Stichsäge M18 FBJS mieten | Hoffmann´s Vermietung</title>
+  <meta name="description" content="Milwaukee M18 FBJS Akku-Stichsäge mieten. Technische Daten, Preise, Lieferumfang. Furtwangen im Schwarzwald.">
+  <meta name="theme-color" content="#e11d48" />
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --ink:#0f172a; --muted:#475569; --line:#e5e7eb;
+      --pri:#e11d48; --pri-600:#be123c;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+
+    /* NAV */
+    header{position:sticky;top:0;z-index:40;background:#ffffffcc;backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;color:#0f172a}
+    .brand-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(145deg,var(--pri),#f43f5e);display:grid;place-items:center;color:#fff;font-weight:900}
+    .menu{display:flex;align-items:center;gap:14px}
+    .menu > li{position:relative;list-style:none}
+    .menu > li > a{display:inline-flex;gap:8px;padding:10px 12px;border-radius:10px;font-weight:600;color:#0f172a}
+    .menu > li:hover > a{background:#f1f5f9}
+
+    /* Dropdown */
+    .dropdown{position:absolute;left:0;top:100%;min-width:280px;display:none;padding:12px}
+    .dropdown .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,.08);padding:10px}
+    .dropdown ul{display:grid;gap:8px;margin:0;padding:0}
+    .dropdown li{list-style:none}
+    .dropdown a{display:block;padding:10px 12px;border-radius:10px;color:var(--muted);font-weight:600;transition:.2s}
+    .dropdown a:hover{background:var(--pri);color:#fff}
+    .menu > li:hover .dropdown{display:block}
+
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25)}
+
+    /* HERO */
+    .hero{position:relative;background:var(--pri);padding:40px 0;color:#fff}
+    .hero .wrap{display:grid;gap:22px}
+    @media(min-width:980px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+    .hero h1{font-size:clamp(28px,4vw,46px);margin-bottom:6px;color:#fff}
+    .hero p, .hero li{color:#f1f5f9}
+    .badge{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:#fff;color:#be123c;margin-bottom:8px;font-weight:800}
+    .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
+
+    /* IMAGE */
+    .product-img{border-radius:14px;border:1px solid var(--line);overflow:hidden;min-height:260px;display:grid;place-items:center;background:#fff}
+    .product-img img{width:100%;height:auto;display:block}
+
+    /* CONTENT */
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:18px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    .price-grid{display:grid;gap:12px}
+    @media(min-width:780px){.price-grid{grid-template-columns:repeat(3,1fr)}}
+    .price{background:linear-gradient(180deg,#fff,#f9fafb);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+    .amount{font-size:28px;font-weight:800;margin:6px 0;color:var(--pri)}
+    .muted{color:var(--muted)}
+    ul{margin-left:18px}
+    footer{margin-top:34px;border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:20px 0}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">🔧</div>
+        <div>Hoffmann´s Vermietung</div>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Start</a></li>
+
+        <li>
+          <a href="#">Werkzeuge</a>
+          <div class="dropdown">
+            <div class="panel">
+              <ul>
+                <li><a href="akkuschrauber.html">Milwaukee Akku/Bohrschrauber</a></li>
+                <li><a href="stichsaege.html">Milwaukee Stichsäge (M18 FBJS)</a></li>
+                <li><a href="#">Milwaukee Bohrhammer</a></li>
+                <li><a href="#">Milwaukee Winkelschleifer</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="index.html#reinigung">Reinigungsmaschinen</a></li>
+        <li><a href="index.html#angebot">Weitere Artikel</a></li>
+        <li><a class="cta" href="anfrage.html?tool=Milwaukee%20Stichs%C3%A4ge%20M18%20FBJS">Jetzt anfragen</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="badge">Milwaukee • M18 FBJS</span>
+        <h1>Milwaukee Stichsäge mieten</h1>
+        <p>Präzise Akku-Stichsäge mit bürstenlosem Motor, FIXTEC™-Sägeblattwechsel und 5-stufigem Pendelhub – sauberer Schnitt bei Holz, Metall & Kunststoff.</p>
+        <ul style="margin-top:8px">
+          <li>Lieferumfang: 1× M18 FBJS Stichsäge, 2× 3,0 Ah Akku (M18), 1× Schnellladegerät, 1× HD-Box/Koffer, 1× Sägeblatt</li>
+        </ul>
+        <div class="inline" style="margin-top:12px">
+          <a class="cta" href="anfrage.html?tool=Milwaukee%20Stichs%C3%A4ge%20M18%20FBJS">Jetzt anfragen</a>
+        </div>
+      </div>
+
+      <!-- PRODUKTBILD (tausche src durch dein RAW-Bild, wenn vorhanden) -->
+      <div class="product-img">
+        <img src="img/m18fbjs-01.jpg" alt="Milwaukee M18 FBJS Stichsäge" onerror="this.parentElement.textContent='Bild folgt… /img/m18fbjs-01.jpg';">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <section class="grid grid-2 card">
+      <div>
+        <h2>Technische Daten</h2>
+        <ul>
+          <li><strong>Leerlaufhubzahl:</strong> 800–3500 min⁻¹</li>
+          <li><strong>Hublänge:</strong> 25 mm</li>
+          <li><strong>Gehrung:</strong> bis 45°</li>
+          <li><strong>Max. Schnitttiefe:</strong> Holz 100 mm · Stahl 10 mm · Alu 19 mm</li>
+          <li><strong>Gewicht (mit 5,0 Ah Akku):</strong> ca. 2,8 kg</li>
+          <li><strong>Funktionen:</strong> 5-fach Pendelhub, FIXTEC™ Schnellwechsel, LED, REDLINK PLUS™</li>
+          <li><strong>System:</strong> M18 – kompatibel mit allen MILWAUKEE® M18™ Akkus</li>
+        </ul>
+        <p class="muted" style="margin-top:8px">Technische Angaben lt. Milwaukee Produktseite/Datenblatt.</p>
+      </div>
+      <div>
+        <h2>Beschreibung</h2>
+        <ul>
+          <li>Sehr ruhiger Lauf, minimierte Ausrisse dank hoher Hubzahl</li>
+          <li>Schneller, werkzeugloser Sägeblattwechsel (FIXTEC™)</li>
+          <li>Pendelhub (5 Stufen) für schnelle oder saubere Schnitte</li>
+          <li>LED-Arbeitslicht und beidseitiger Ein/Aus-Schalter</li>
+          <li>Kunststoff-Gleitsohle & Absaugadapter für staubarmes Arbeiten</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Preise</h2>
+      <div class="price-grid" style="margin-top:10px">
+        <div class="price">
+          <div class="muted">Tag</div>
+          <div class="amount">12 €</div>
+          <div class="muted">Abholung in Furtwangen</div>
+        </div>
+        <div class="price">
+          <div class="muted">Wochenende (Fr–So)</div>
+          <div class="amount">20 €</div>
+          <div class="muted">Fair & transparent</div>
+        </div>
+        <div class="price">
+          <div class="muted">Woche (7 Tage)</div>
+          <div class="amount">40 €</div>
+          <div class="muted">Kaution: 50 €</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Rechnung mit Mietvertrag</p>
+    </section>
+
+    <section class="card">
+      <h2>Lieferumfang (nochmals)</h2>
+      <ul>
+        <li>1× Milwaukee Stichsäge M18 FBJS</li>
+        <li>2× 3,0 Ah Akku (M18)</li>
+        <li>1× Schnellladegerät</li>
+        <li>1× HD-Box/Koffer</li>
+        <li>1× Sägeblatt (weitere Blätter auf Anfrage)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Direkt reservieren</h2>
+      <p>Klick auf „Jetzt anfragen“ und sende uns Zeitraum & Kontaktdaten. Wir melden uns schnell zurück.</p>
+      <div class="inline" style="margin-top:10px">
+        <a class="cta" href="anfrage.html?tool=Milwaukee%20Stichs%C3%A4ge%20M18%20FBJS">Jetzt anfragen</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Patrick Hoffmann · Hauptstraße 18 · 78120 Furtwangen · 
+        <a href="mailto:Patrick.Vermietung@gmx.de">Patrick.Vermietung@gmx.de</a>
+      </p>
+      <p>© <span id="y"></span> Hoffmann´s Vermietung</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
