@@ -40,16 +40,29 @@
     .dropdown a:hover{background:#f8fafc;color:var(--ink)}
 
     /* Milwaukee-Rot für Werkzeug-Dropdown */
-    .menu > li:first-child:hover .panel{background:var(--pri);} /* Werkzeuge Panel */
-    .menu > li:first-child:hover .dropdown a{color:#fff;}
-    .menu > li:first-child:hover .dropdown a:hover{background:#be123c;color:#fff;}
+    .menu > li:nth-child(1):hover .panel{background:var(--pri);} /* Werkzeuge Panel */
+    .menu > li:nth-child(1):hover .dropdown a{color:#fff;}
+    .menu > li:nth-child(1):hover .dropdown a:hover{background:#be123c;color:#fff;}
 
     .menu > li:hover .dropdown{display:block}
 
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25);transition:.2s}
     .cta:hover{transform:translateY(-1px);background:var(--pri-600)}
 
-    .hero{position:relative;background:url(https://raw.githubusercontent.com/HoffmannsVermietung/Hoffmanns-Verleih/main/ChatGPT%20Image%2019.%20Okt.%202025%2C%2014_15_06.png) center/cover no-repeat;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+    /* HERO Bereich mit Bild */
+    .hero{
+      position:relative;
+      background-image:url("./ChatGPT Image 19. Okt. 2025, 14_15_06.png");
+      background-position:center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+    }
     .hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.45);}
     .hero-content{position:relative;z-index:1;padding:0 20px;max-width:900px}
     .hero h1{font-size:clamp(36px,5vw,60px);margin-bottom:10px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
@@ -96,16 +109,13 @@
             </div>
           </div>
         </li>
-        <li>
-          <a href="#">Boxautomaten</a>
+        <li><a href="#">Boxautomaten</a>
           <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
-        <li>
-          <a href="#">Hüpfburgen</a>
+        <li><a href="#">Hüpfburgen</a>
           <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
-        <li>
-          <a href="#">Beamer</a>
+        <li><a href="#">Beamer</a>
           <div class="dropdown"><div class="panel"><p style="padding:10px;color:#475569;font-weight:600">Coming soon...</p></div></div>
         </li>
         <li><a class="cta" href="#kontakt">Jetzt anfragen</a></li>
@@ -165,4 +175,3 @@
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
