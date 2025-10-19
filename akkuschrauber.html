@@ -4,17 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Milwaukee Akku/Bohrschrauber M18BLDDRC-0X mieten | Hoffmann´s Vermietung</title>
-  <meta name="description" content="Milwaukee M18BLDDRC-0X Akku/Bohrschrauber mieten. Preise, Beschreibung, schnelle Anfrage. Furtwangen im Schwarzwald.">
+  <meta name="description" content="Milwaukee M18BLDDRC-0X Akku/Bohrschrauber mieten. Echte technische Daten, Preise, Lieferumfang. Furtwangen im Schwarzwald.">
   <meta name="theme-color" content="#ffffff" />
   <style>
     :root{
       --bg:#f5f7fb; --card:#ffffff; --ink:#0f172a; --muted:#475569;
-      --line:#e5e7eb; --pri:#e11d48; --pri-600:#be123c; --accent:#0ea5e9;
+      --line:#e5e7eb; --pri:#e11d48; --pri-600:#be123c;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
     a{color:inherit;text-decoration:none}
     .container{max-width:1200px;margin:0 auto;padding:20px}
+
+    /* NAV */
     header{position:sticky;top:0;z-index:40;background:#ffffffcc;backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px;font-weight:900}
@@ -24,22 +26,33 @@
     .menu > li > a{display:inline-flex;gap:8px;padding:10px 12px;border-radius:10px;font-weight:600}
     .menu > li:hover > a{background:#f1f5f9}
     .cta{display:inline-flex;align-items:center;gap:10px;background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(225,29,72,.25)}
-    .hero{position:relative;background:#0f172a;height:auto;display:flex;align-items:center;padding:40px 0}
-    .hero .container{display:flex;flex-direction:column;gap:20px}
-    .hero h1{font-size:clamp(28px,4vw,46px);color:#fff}
-    .hero p{color:#e2e8f0;max-width:720px}
-    .badge{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:#fee2e2;color:#991b1b;margin-bottom:6px;font-weight:800}
+
+    /* HERO */
+    .hero{position:relative;background:#0f172a;padding:40px 0}
+    .hero .wrap{display:grid;gap:22px}
+    @media(min-width:980px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+    .hero h1{font-size:clamp(28px,4vw,46px);color:#fff;margin-bottom:6px}
+    .hero p, .hero li{color:#e2e8f0}
+    .badge{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:#fee2e2;color:#991b1b;margin-bottom:8px;font-weight:800}
+    .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
+
+    /* GALLERY */
+    .gallery{display:grid;gap:12px}
+    @media(min-width:680px){.gallery{grid-template-columns:1fr 1fr}}
+    .shot{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;min-height:220px;display:grid;place-items:center}
+    .shot img{display:block;width:100%;height:100%;object-fit:cover}
+
+    /* Content */
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:18px}
     .grid{display:grid;gap:16px}
-    @media(min-width:900px){.grid-2{grid-template-columns:1.1fr .9fr}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
     .price-grid{display:grid;gap:12px}
     @media(min-width:780px){.price-grid{grid-template-columns:repeat(3,1fr)}}
     .price{background:linear-gradient(180deg,#fff,#f9fafb);border:1px solid var(--line);border-radius:14px;padding:16px}
     .amount{font-size:28px;font-weight:800;margin:6px 0}
     .muted{color:var(--muted)}
-    footer{margin-top:34px;border-top:1px solid var(--line);color:var(--muted)}
-    .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
     ul{margin-left:18px}
+    footer{margin-top:34px;border-top:1px solid var(--line);color:var(--muted)}
   </style>
 </head>
 <body>
@@ -62,73 +75,91 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
+    <div class="container wrap">
       <div>
         <span class="badge">Milwaukee • M18BLDDRC-0X</span>
         <h1>Milwaukee Akku/Bohrschrauber mieten</h1>
-        <p>Bürstenloser M18 Akku/Bohrschrauber (Modell <strong>M18BLDDRC-0X</strong>) inkl. 2× 3Ah Akkus, Schnellladegerät und Koffer. Ideal für Montage, Ausbau und Renovierungen.</p>
-        <ul style="color:#f1f5f9;margin-top:10px;">
-          <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
-          <li>1× Ladegerät</li>
-          <li>1× robuster Transportkoffer</li>
-          <li>2× 3.0Ah Akku (M18)</li>
+        <p>Bürstenloser M18 Akku/Bohrschrauber inkl. 2× 3,0 Ah Akkus, Schnellladegerät und Koffer. Ideal für Montage, Ausbau und Renovierungen.</p>
+        <ul style="margin-top:8px">
+          <li>Lieferumfang: 1× M18BLDDRC-0X, 1× Ladegerät, 1× Koffer, 2× 3,0 Ah Akku (M18)</li>
         </ul>
         <div class="inline" style="margin-top:12px">
           <a class="cta" href="anfrage.html?tool=Milwaukee%20Akku%2FBohrschrauber%20M18BLDDRC-0X">Jetzt anfragen</a>
+        </div>
+      </div>
+
+      <!-- GALLERY (lade deine Bilder in /img hoch) -->
+      <div class="gallery">
+        <div class="shot">
+          <img src="img/m18blddrc-01.jpg" alt="Milwaukee M18BLDDRC-0X – Ansicht 1" onerror="this.parentElement.textContent='Bild folgt… /img/m18blddrc-01.jpg'">
+        </div>
+        <div class="shot">
+          <img src="img/m18blddrc-02.jpg" alt="Milwaukee M18BLDDRC-0X – Ansicht 2" onerror="this.parentElement.textContent='Bild folgt… /img/m18blddrc-02.jpg'">
+        </div>
+        <div class="shot">
+          <img src="img/m18blddrc-03.jpg" alt="Milwaukee M18BLDDRC-0X – im Koffer" onerror="this.parentElement.textContent='Bild folgt… /img/m18blddrc-03.jpg'">
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTENT -->
-  <main class="container" style="margin-top:18px">
-    <section class="grid grid-2">
-      <div class="card">
-        <h2>Preise</h2>
-        <div class="price-grid" style="margin-top:10px">
-          <div class="price">
-            <div class="muted">Tag</div>
-            <div class="amount">15 € netto</div>
-            <div class="muted">zzgl. MwSt., Abholung in Furtwangen</div>
-          </div>
-          <div class="price">
-            <div class="muted">Wochenende (Fr–So)</div>
-            <div class="amount">35 € netto</div>
-            <div class="muted">zzgl. MwSt., fair & transparent</div>
-          </div>
-          <div class="price">
-            <div class="muted">Woche (7 Tage)</div>
-            <div class="amount">60 € netto</div>
-            <div class="muted">zzgl. MwSt., Kaution: 50 €</div>
-          </div>
-        </div>
-        <p class="muted" style="margin-top:10px">Rechnung mit ausgewiesener MwSt. möglich · Gewerbliche Vermietung</p>
+  <main class="container">
+    <section class="grid grid-2 card">
+      <div>
+        <h2>Technische Daten</h2>
+        <ul>
+          <li><strong>Drehmoment (max.):</strong> 60,5 Nm</li>
+          <li><strong>Drehzahl:</strong> 0–550 / 0–1.700 U/min (2 Gänge)</li>
+          <li><strong>Bohrfutter:</strong> 13 mm Metall-Schnellspannbohrfutter</li>
+          <li><strong>Bohr-Ø:</strong> Holz 52 mm · Stahl 13 mm · Mauerwerk 16 mm</li>
+          <li><strong>Länge:</strong> ca. 145 mm (kompakt)</li>
+          <li><strong>Gewicht (mit 5,0 Ah Akku):</strong> ca. 1,5 kg</li>
+          <li><strong>Akku-System:</strong> M18 – kompatibel mit allen MILWAUKEE® M18™ Akkus</li>
+        </ul>
       </div>
-      <div class="card">
+      <div>
         <h2>Beschreibung</h2>
         <ul>
-          <li>Bürstenloser Motor: hohe Leistung & längere Laufzeit</li>
-          <li>2× 3.0Ah M18 Akkus + Schnellladegerät</li>
-          <li>Robuster Koffer, kompakt & baustellentauglich</li>
-          <li>Metall-Schnellspannbohrfutter, präzise Drehmomentstufen</li>
-          <li>Perfekt für Holz-, Metall- und Trockenbauarbeiten</li>
+          <li>Bürstenloser Motor für hohe Leistung & Lebensdauer</li>
+          <li>Elektronischer Schutz & Effizienz (REDLINK™/REDLITHIUM™)</li>
+          <li>LED-Arbeitslicht, Akku-Ladestandsanzeige</li>
+          <li>Metall-Gürtelclip, robustes Gehäuse</li>
+          <li>Im Set mit 2× 3,0 Ah Akku, Ladegerät & Koffer</li>
         </ul>
       </div>
     </section>
 
     <section class="card">
-      <h2>Lieferumfang</h2>
-      <ul>
-        <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
-        <li>1× Ladegerät</li>
-        <li>1× robuster Transportkoffer</li>
-        <li>2× 3.0Ah Akku (M18)</li>
-      </ul>
+      <h2>Preise</h2>
+      <div class="price-grid" style="margin-top:10px">
+        <div class="price">
+          <div class="muted">Tag</div>
+          <div class="amount">12 € netto</div>
+          <div class="muted">zzgl. MwSt., Abholung in Furtwangen</div>
+        </div>
+        <div class="price">
+          <div class="muted">Wochenende (Fr–So)</div>
+          <div class="amount">30 € netto</div>
+          <div class="muted">zzgl. MwSt., fair & transparent</div>
+        </div>
+        <div class="price">
+          <div class="muted">Woche (7 Tage)</div>
+          <div class="amount">55 € netto</div>
+          <div class="muted">zzgl. MwSt., Kaution: 50 €</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Rechnung mit ausgewiesener MwSt. möglich · Gewerbliche Vermietung</p>
     </section>
 
     <section class="card">
-      <h2>Standort</h2>
-      <p class="muted">Furtwangen im Schwarzwald – Abholung & Lieferung nach Absprache.</p>
+      <h2>Lieferumfang (nochmals)</h2>
+      <ul>
+        <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
+        <li>1× Schnellladegerät</li>
+        <li>1× Transportkoffer</li>
+        <li>2× 3,0 Ah Akku (M18)</li>
+      </ul>
     </section>
 
     <section class="card">
@@ -149,6 +180,7 @@
       <p class="muted">© <span id="y"></span> Hoffmann´s Vermietung</p>
     </div>
   </footer>
+
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
