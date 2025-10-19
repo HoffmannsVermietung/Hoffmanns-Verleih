@@ -8,12 +8,12 @@
   <meta name="theme-color" content="#e11d48" />
   <style>
     :root{
-      --bg:#f5f7fb; /* Heller Hintergrund */
+      --bg:#f5f7fb;
       --card:#ffffff;
       --ink:#0f172a;
       --muted:#475569;
       --line:#e5e7eb;
-      --pri:#e11d48; /* Milwaukee-Rot */
+      --pri:#e11d48;
       --pri-600:#be123c;
     }
     *{box-sizing:border-box;margin:0;padding:0}
@@ -28,11 +28,8 @@
 
     /* NAV */
     header{
-      position:sticky;
-      top:0;
-      z-index:40;
-      background:#ffffffcc;
-      backdrop-filter:saturate(1.2) blur(8px);
+      position:sticky;top:0;z-index:40;
+      background:#ffffffcc;backdrop-filter:saturate(1.2) blur(8px);
       border-bottom:1px solid var(--line);
     }
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -53,11 +50,8 @@
     /* Dropdown */
     .dropdown{position:absolute;left:0;top:100%;min-width:280px;display:none;padding:12px}
     .dropdown .panel{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:14px;
-      box-shadow:0 12px 30px rgba(2,6,23,.08);
-      padding:10px;
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      box-shadow:0 12px 30px rgba(2,6,23,.08);padding:10px;
     }
     .dropdown ul{display:grid;gap:8px;margin:0;padding:0}
     .dropdown li{list-style:none}
@@ -76,19 +70,13 @@
 
     /* HERO */
     .hero{
-      position:relative;
-      background:var(--pri);
-      padding:40px 0;
-      color:#fff;
+      position:relative;background:var(--pri);padding:40px 0;color:#fff;
     }
     .hero .wrap{display:grid;gap:22px}
     @media(min-width:980px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
     .hero h1{font-size:clamp(28px,4vw,46px);margin-bottom:6px;color:#fff}
     .hero p, .hero li{color:#f1f5f9}
-    .badge{
-      display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;
-      background:#fff;color:#be123c;margin-bottom:8px;font-weight:800;
-    }
+    .badge{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;background:#fff;color:#be123c;margin-bottom:8px;font-weight:800}
     .inline{display:inline-flex;gap:12px;flex-wrap:wrap}
 
     /* IMAGE */
@@ -138,9 +126,9 @@
             <div class="panel">
               <ul>
                 <li><a href="akkuschrauber.html">Milwaukee Akku/Bohrschrauber</a></li>
+                <li><a href="stichsaege.html">Milwaukee Stichsäge (M18 FBJS)</a></li>
                 <li><a href="#">Milwaukee Bohrhammer</a></li>
                 <li><a href="#">Milwaukee Winkelschleifer</a></li>
-                <li><a href="#">Milwaukee Stichsäge</a></li>
               </ul>
             </div>
           </div>
