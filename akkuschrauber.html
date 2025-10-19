@@ -43,12 +43,31 @@
       display:grid;place-items:center;color:#fff;font-weight:900;
     }
     .menu{display:flex;align-items:center;gap:14px}
-    .menu > li{list-style:none}
+    .menu > li{position:relative;list-style:none}
     .menu > li > a{
       display:inline-flex;gap:8px;padding:10px 12px;border-radius:10px;
       font-weight:600;color:#0f172a;
     }
     .menu > li:hover > a{background:#f1f5f9}
+
+    /* Dropdown */
+    .dropdown{position:absolute;left:0;top:100%;min-width:280px;display:none;padding:12px}
+    .dropdown .panel{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(2,6,23,.08);
+      padding:10px;
+    }
+    .dropdown ul{display:grid;gap:8px;margin:0;padding:0}
+    .dropdown li{list-style:none}
+    .dropdown a{
+      display:block;padding:10px 12px;border-radius:10px;
+      color:var(--muted);font-weight:600;transition:.2s;
+    }
+    .dropdown a:hover{background:var(--pri);color:#fff}
+    .menu > li:hover .dropdown{display:block}
+
     .cta{
       display:inline-flex;align-items:center;gap:10px;
       background:var(--pri);color:#fff;padding:10px 14px;border-radius:12px;
@@ -112,7 +131,21 @@
       </div>
       <ul class="menu">
         <li><a href="index.html">Start</a></li>
-        <li><a href="akkuschrauber.html">Milwaukee Akku/Bohrschrauber</a></li>
+
+        <li>
+          <a href="#">Werkzeuge</a>
+          <div class="dropdown">
+            <div class="panel">
+              <ul>
+                <li><a href="akkuschrauber.html">Milwaukee Akku/Bohrschrauber</a></li>
+                <li><a href="#">Milwaukee Bohrhammer</a></li>
+                <li><a href="#">Milwaukee Winkelschleifer</a></li>
+                <li><a href="#">Milwaukee Stichsäge</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
         <li><a href="index.html#reinigung">Reinigungsmaschinen</a></li>
         <li><a href="index.html#angebot">Weitere Artikel</a></li>
         <li><a class="cta" href="anfrage.html?tool=Milwaukee%20Akku%2FBohrschrauber%20M18BLDDRC-0X">Jetzt anfragen</a></li>
@@ -197,28 +230,3 @@
         <li>1× Milwaukee Akku/Bohrschrauber M18BLDDRC-0X</li>
         <li>1× Schnellladegerät</li>
         <li>1× Transportkoffer</li>
-        <li>2× 3,0 Ah Akku (M18)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Direkt reservieren</h2>
-      <p>Klick auf „Jetzt anfragen“ und sende uns Zeitraum & Kontaktdaten. Wir melden uns schnell zurück.</p>
-      <div class="inline" style="margin-top:10px">
-        <a class="cta" href="anfrage.html?tool=Milwaukee%20Akku%2FBohrschrauber%20M18BLDDRC-0X">Jetzt anfragen</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Patrick Hoffmann · Hauptstraße 18 · 78120 Furtwangen · 
-        <a href="mailto:Patrick.Vermietung@gmx.de" style="color:#fff;text-decoration:underline;">Patrick.Vermietung@gmx.de</a>
-      </p>
-      <p>© <span id="y"></span> Hoffmann´s Vermietung</p>
-    </div>
-  </footer>
-
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
